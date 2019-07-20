@@ -1,0 +1,77 @@
+body{
+	background-image:url(../img/dots.png);
+	background-color:#000;
+	background-repeat:repeat;
+	background-attachment:scroll;
+	background-position:left top;
+}
+nav{
+	background-color: #181818;
+}
+.jumbotron{
+	background-color: #f8f8f8;
+}
+.show table{
+ border: 1px solid  ;
+ text-decoration: none;
+ text-align: center;
+}
+.show thead{
+border: 1px solid rgba(0,0,0,0.1);
+background-color: #181818;
+}
+.show tr{
+border: 1px solid #212529;
+}
+.show tr:hover { 
+   background-color: rgba(0,0,0,0.03);
+}
+.show a{ 
+   text-decoration: none;
+}
+.search-box
+{
+    right: 50%;
+    transform: translate(0%,10%);
+    background-color: #181818;
+    height: 40px;
+    border-radius: 40px;
+}
+.search-box:hover > .search-txt
+{
+    width: 240px;
+    padding: 0 3px;
+}
+.search-box:hover > .search-btn
+{
+   background-color: white;
+   color: black;
+}
+.search-btn
+{
+	 border: none;
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt
+{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+va

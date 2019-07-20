@@ -1,0 +1,28 @@
+Options +FollowSymLinks
+Options All -Indexes
+Options +FollowSymLinks -MultiViews
+
+ErrorDocument 404 /index.php?page=404
+
+RewriteEngine on
+#category
+RewriteRule ^webapps/$ index.php?cat=1 [NC]
+RewriteRule ^rl_exploits/$ index.php?cat=2 [NC]
+RewriteRule ^papers/$ index.php?cat=3 [NC]
+RewriteRule ^tools/$ index.php?cat=4 [NC]
+
+#category pagin 
+RewriteRule ^webapps/([0-9]+)$ index.php?cat=1&pagin=$1 [NC]
+RewriteRule ^rl_exploits/([0-9]+)$ index.php?cat=2&pagin=$1 [NC]
+RewriteRule ^papers/([0-9]+)$ index.php?cat=3&pagin=$1 [NC]
+RewriteRule ^tools/([0-9]+)$ index.php?cat=4&pagin=$1 [NC]
+
+#exploit
+RewriteRule ^exploit/([0-9]+)$ index.php?exploit=$1 [NC]
+
+#author
+RewriteRule ^author/(.*)$ index.php?author=$1 [NC]
+
+
+#search
+RewriteRule ^search/(.+)$ index.php?search=$1 [NC]
